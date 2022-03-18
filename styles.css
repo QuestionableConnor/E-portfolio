@@ -36,6 +36,10 @@ li{
     flex: 1;
 }
 
+.container{
+    padding: 50px 0;
+}
+
 .row{
     width: 100%;
     max-width: 800px;
@@ -44,6 +48,14 @@ li{
 
 .textBlue{
     color: #075aac;
+}
+
+section:nth-child(even){
+    background-color: #f8f8f8;
+}
+
+.section__title{
+    margin-bottom: 20px;
 }
 
 /*NAVIGATION BAR*/
@@ -151,4 +163,48 @@ nav{
 
 .about-me__image{
     width: 100%;
+}
+
+/* LANGUAGE ARSENAL */
+
+.language__img{
+    width: 100%;
+    max-width: 100px;
+    transition: all 250ms ease-in;
+}
+
+.language:hover .language__img{
+    filter: brightness(80%);
+    opacity: 0.85;
+    transform: scale(0.9);
+}
+
+.language{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.language__list{
+    display: flex;
+}
+
+.language__name{
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 250ms ease-in;
+    font-size: 16px;
+}
+
+.language:hover .language__name{
+    transform: scale(1);
 }
