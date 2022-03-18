@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, span{
+    color: #242424;
+    text-align: center;
+    line-height: 1.25;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex1{
+    flex: 1;
+}
+
+.row{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.textBlue{
+    color: #075AAC;
+}
+
+/*NAVIGATION BAR*/
+
+nav{
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLinkList{
+    display: flex;
+}
+
+.navLinkAnchor{
+    margin: 0 12px;
+    color: #242424;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navLinkAnchor-Primary{
+    background-color: #075AAC;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #fff;
+    transition: all 450ms ease;
+}
+
+.navLinkAnchor-Primary:hover{
+    background-color: #007CE1;
+}
+
+.personalLogo{
+    font-size: 24px;
+    color: #075AAC;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+/*ABOUT ME*/
+
+#aboutMe{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe-infoContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe-pictureMask{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.5);
+    margin-bottom: 28px;
+}
+
+.aboutMeImage{
+    width: 100%;
+
+    
+    /*!!Improve picture, use as necessary!!*/
+    transform: scale(1.4);
+    padding-bottom: 20px;
+    
+}
