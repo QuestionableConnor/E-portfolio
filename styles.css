@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6, span{
     line-height: 1.25;
 }
 
+h1{
+    font-size: 32px;
+}
+
 p{
     line-height: 1.5;
     font-size: 16px;
@@ -26,7 +30,7 @@ li{
     display: flex;
 }
 
-.flex1{
+.flex-1{
     flex: 1;
 }
 
@@ -51,18 +55,18 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.navLinkList{
+.nav__link--list{
     display: flex;
 }
 
-.navLinkAnchor{
+.nav__link--anchor{
     margin: 0 12px;
     color: #242424;
     text-decoration: none;
     font-weight: 700;
 }
 
-.navLinkAnchor-Primary{
+.nav__link--anchor-Primary{
     background-color: #075AAC;
     padding: 8px 20px;
     border-radius: 50px;
@@ -70,11 +74,11 @@ nav{
     transition: all 450ms ease;
 }
 
-.navLinkAnchor-Primary:hover{
+.nav__link--anchor-Primary:hover{
     background-color: #007CE1;
 }
 
-.personalLogo{
+.personal__logo{
     font-size: 24px;
     color: #075AAC;
     margin: 0 12px;
@@ -83,20 +87,27 @@ nav{
 
 /*ABOUT ME*/
 
-#aboutMe{
+#about-me{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.aboutMe-infoContainer{
+.about-me__info{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
 }
 
-.aboutMe-pictureMask{
+.about-me__info--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__picture--mask{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -105,12 +116,37 @@ nav{
     margin-bottom: 28px;
 }
 
-.aboutMeImage{
+.about-me__picture{
     width: 100%;
-
-    
     /*!!Improve picture, use as necessary!!*/
     transform: scale(1.4);
-    padding-bottom: 20px;
-    
+    padding-bottom: 24px;
+}
+
+.about-me__info--title{
+    margin-bottom: 16px;
+}
+
+.about-me__info--para{
+    font-size: 22px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.about-me__link{
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.about-me__image--container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.about-me__image{
+    width: 100%;
 }
