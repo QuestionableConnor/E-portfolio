@@ -37,12 +37,18 @@ a{
     content: "";
     position: absolute;
     height: 3px;
-    background-color: #000;
     width: 0;
-    width: 100%;
     bottom: -3px;
     right: 0;
     transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after{
+    background-color: #fff;
+}
+
+.link__hover-effect--black:after{
+    background-color: #000;
 }
 
 .link__hover-effect:hover:after{
